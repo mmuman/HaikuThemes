@@ -227,13 +227,13 @@ BMessage('ZThm') {
 		// Inactive Window Tab Background
 		h:c:InWinTabBg = rgb_color(0,0,0,255)
 		// Inactive Window Tab Text
-		h:c:InWinTabTx = rgb_color(0,127,0,255)
+		h:c:InWinTabTx = rgb_color(0,220,0,255)
 		// Window Border
 		h:c:WinBr = rgb_color(0,255,0,255)
 		// Inactive Window Border
 		h:c:InWinBr = rgb_color(0,0,0,255)
 		// List Background
-		h:c:LstBg = rgb_color(0,31,0,255)
+		h:c:LstBg = rgb_color(0,5,0,255)
 		// List Selected Background
 		h:c:LstSBg = rgb_color(0,169,0,255)
 		// List Item Text
