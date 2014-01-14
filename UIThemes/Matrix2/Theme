@@ -192,6 +192,8 @@ BMessage('ZThm') {
 		be:c:CtlBr = rgb_color(22,255,38,255)
 		// Control Highlight
 		be:c:CtlHg = rgb_color(33,180,1,255)
+		// Control Mark
+		h:c:CtlMk = rgb_color(27,103,38,255)
 		// Navigation Base
 		be:c:NavBs = rgb_color(153,255,0,255)
 		// Navigation Pulse
@@ -203,7 +205,7 @@ BMessage('ZThm') {
 		// ToolTip Background
 		be:c:TipBg = rgb_color(0,0,0,255)
 		// ToolTip Text
-		be:c:TipTx = rgb_color(255,254,0,255)
+		be:c:TipTx = rgb_color(81,254,0,255)
 		// Menu Background
 		be:c:MenBg = rgb_color(0,1,2,255)
 		// Menu Selected Background
@@ -215,9 +217,31 @@ BMessage('ZThm') {
 		// Menu Selected Border
 		be:c:MenSBr = rgb_color(0,255,0,255)
 		// Success
-		be:c:Success = rgb_color(0,255,0,255)
+		be:c:Success = rgb_color(70,255,69,255)
 		// Failure
-		be:c:Failure = rgb_color(142,104,0,255)
+		be:c:Failure = rgb_color(225,104,0,255)
+		// Window Tab Background
+		h:c:WinTabBg = rgb_color(0,203,0,255)
+		// Window Tab Text
+		h:c:WinTabTx = rgb_color(0,0,0,255)
+		// Inactive Window Tab Background
+		h:c:InWinTabBg = rgb_color(0,0,0,255)
+		// Inactive Window Tab Text
+		h:c:InWinTabTx = rgb_color(0,127,0,255)
+		// Window Border
+		h:c:WinBr = rgb_color(0,255,0,255)
+		// Inactive Window Border
+		h:c:InWinBr = rgb_color(0,0,0,255)
+		// List Background
+		h:c:LstBg = rgb_color(0,31,0,255)
+		// List Selected Background
+		h:c:LstSBg = rgb_color(0,169,0,255)
+		// List Item Text
+		h:c:LstTx = rgb_color(0,207,0,255)
+		// List Selected Item Text
+		h:c:LstSTx = rgb_color(39,0,0,255)
+		// Scrollbar Thumb
+		h:c:SbThb = rgb_color(0,216,0,255)
 		// Menu Item Text
 		be:f:MenTx = BFont(ProFont/Regular/14.0, shear=90.0, rot=0.0, height=14.1556+3.11111+0.0)
 		// Menu Separator

@@ -144,6 +144,8 @@ BMessage('ZThm') {
 		be:c:CtlBr = rgb_color(34,112,0,255)
 		// Control Highlight
 		be:c:CtlHg = rgb_color(201,251,34,255)
+		// Control Mark
+		h:c:CtlMk = rgb_color(27,82,140,255)
 		// Navigation Base
 		be:c:NavBs = rgb_color(27,186,0,255)
 		// Navigation Pulse
@@ -170,6 +172,28 @@ BMessage('ZThm') {
 		be:c:Success = rgb_color(0,255,0,255)
 		// Failure
 		be:c:Failure = rgb_color(255,50,0,255)
+		// Window Tab Background
+		h:c:WinTabBg = rgb_color(255,203,0,255)
+		// Window Tab Text
+		h:c:WinTabTx = rgb_color(0,0,0,255)
+		// Inactive Window Tab Background
+		h:c:InWinTabBg = rgb_color(232,232,232,255)
+		// Inactive Window Tab Text
+		h:c:InWinTabTx = rgb_color(102,102,102,255)
+		// Window Border
+		h:c:WinBr = rgb_color(255,203,0,255)
+		// Inactive Window Border
+		h:c:InWinBr = rgb_color(232,232,232,255)
+		// List Background
+		h:c:LstBg = rgb_color(210,255,160,255)
+		// List Selected Background
+		h:c:LstSBg = rgb_color(255,216,73,255)
+		// List Item Text
+		h:c:LstTx = rgb_color(0,0,0,255)
+		// List Selected Item Text
+		h:c:LstSTx = rgb_color(0,0,0,255)
+		// Scrollbar Thumb
+		h:c:SbThb = rgb_color(255,203,0,255)
 		// Menu Item Text
 		be:f:MenTx = BFont(Bitstream Vera Sans/Roman/14.0, shear=90.0, rot=0.0, height=12.9951+3.30176+0.0)
 		// Menu Separator

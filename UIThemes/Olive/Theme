@@ -1,7 +1,7 @@
 // new BMessage
 BMessage('ZThm') {
 	z:theme:infos = BMessage(0x00000000) {
-		z:theme:name = string("Olive", 11 bytes)
+		z:theme:name = string("Olive", 5 bytes)
 		z:theme:screenshot = string("screenshot.png", 14 bytes)
 	}
 	// Desktop backgrounds and color; please respect count and ordering of all fields!
@@ -27,8 +27,7 @@ BMessage('ZThm') {
 		be:desktop_color[0] = rgb_color(160,160,94,255)
 		be:desktop_color[1] = rgb_color(160,160,94,255)
 		be:desktop_color[2] = rgb_color(160,160,94,255)
-		be:desktop_color[3] = rgb_color(160,160,90,255)
-		be:desktop_color[4] = rgb_color(160,160,94,255)
+		be:desktop_color[3] = rgb_color(160,160,94,255)
 	}
 	// Deskbar position
 	deskbar_settings = BMessage(0x00000000) {
@@ -196,6 +195,8 @@ BMessage('ZThm') {
 		be:c:CtlBr = rgb_color(63,63,0,255)
 		// Control Highlight
 		be:c:CtlHg = rgb_color(188,140,43,255)
+		// Control Mark
+		h:c:CtlMk = rgb_color(27,82,140,255)
 		// Navigation Base
 		be:c:NavBs = rgb_color(160,160,50,255)
 		// Navigation Pulse
@@ -219,9 +220,31 @@ BMessage('ZThm') {
 		// Menu Selected Border
 		be:c:MenSBr = rgb_color(72,73,26,255)
 		// Success
-		be:c:Success = rgb_color(125,125,60,255)
+		be:c:Success = rgb_color(124,193,60,255)
 		// Failure
 		be:c:Failure = rgb_color(255,0,0,255)
+		// Window Tab Background
+		h:c:WinTabBg = rgb_color(221,203,0,255)
+		// Window Tab Text
+		h:c:WinTabTx = rgb_color(0,0,0,255)
+		// Inactive Window Tab Background
+		h:c:InWinTabBg = rgb_color(185,185,130,255)
+		// Inactive Window Tab Text
+		h:c:InWinTabTx = rgb_color(102,102,102,255)
+		// Window Border
+		h:c:WinBr = rgb_color(224,224,151,255)
+		// Inactive Window Border
+		h:c:InWinBr = rgb_color(185,185,130,255)
+		// List Background
+		h:c:LstBg = rgb_color(169,169,86,255)
+		// List Selected Background
+		h:c:LstSBg = rgb_color(128,130,0,255)
+		// List Item Text
+		h:c:LstTx = rgb_color(0,0,0,255)
+		// List Selected Item Text
+		h:c:LstSTx = rgb_color(0,0,0,255)
+		// Scrollbar Thumb
+		h:c:SbThb = rgb_color(216,216,216,255)
 		// Menu Item Text
 		be:f:MenTx = BFont(Dutch801 Rm BT/Roman/12.0, shear=90.0, rot=0.0, height=11.5547+3.07031+0.0)
 		// Menu Separator
