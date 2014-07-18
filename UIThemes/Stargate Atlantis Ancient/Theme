@@ -1,0 +1,263 @@
+// new BMessage
+BMessage('ZThm') {
+	z:theme:infos = BMessage(0x00000000) {
+		z:theme:name = string("Stargate Atlantis Ancient", 25 bytes)
+		z:theme:screenshot = string("screenshot.png", 14 bytes)
+	}
+	// Desktop backgrounds and color; please respect count and ordering of all fields!
+	be:bgndimginfo = BMessage(0x00000000) {
+		// If true, use desktop color as icon text background
+		be:bgndimginfoerasetext[0] = bool(false)
+		be:bgndimginfoerasetext[1] = bool(false)
+		be:bgndimginfoerasetext[2] = bool(false)
+		be:bgndimginfoerasetext[3] = bool(false)
+		be:bgndimginfoerasetext[4] = bool(false)
+		be:bgndimginfoerasetext[5] = bool(false)
+		be:bgndimginfoerasetext[6] = bool(false)
+		// Actual backdrop image file
+		be:bgndimginfopath[0] = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Wallpaper/SGAWallpaper.jpg", 107 bytes)
+		be:bgndimginfopath[1] = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Wallpaper/sAtlantis4.jpg", nn bytes)
+		be:bgndimginfopath[2] = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Wallpaper/sAtlantis5.jpg", nn bytes)
+		be:bgndimginfopath[3] = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Wallpaper/sAtlantis6.jpg", nn bytes)
+		be:bgndimginfopath[4] = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Wallpaper/sAtlantis7.jpg", nn bytes)
+		be:bgndimginfopath[5] = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Wallpaper/sAtlantis8.jpg", nn bytes)
+		be:bgndimginfopath[6] = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Wallpaper/mirko_gaterium.jpg", nn bytes)
+		// Workspaces each backdrop apply to
+		be:bgndimginfoworkspaces[0] = int32(1)
+		be:bgndimginfoworkspaces[1] = int32(2)
+		be:bgndimginfoworkspaces[2] = int32(4)
+		be:bgndimginfoworkspaces[3] = int32(8)
+		be:bgndimginfoworkspaces[4] = int32(16)
+		be:bgndimginfoworkspaces[5] = int32(32)
+		be:bgndimginfoworkspaces[7] = int32(-1)
+		// Origin point for mode 0
+		be:bgndimginfooffset[0] = BPoint(0.0, 0.0)
+		be:bgndimginfooffset[1] = BPoint(0.0, 0.0)
+		be:bgndimginfooffset[2] = BPoint(0.0, 0.0)
+		be:bgndimginfooffset[3] = BPoint(0.0, 0.0)
+		be:bgndimginfooffset[4] = BPoint(0.0, 0.0)
+		be:bgndimginfooffset[5] = BPoint(0.0, 0.0)
+		be:bgndimginfooffset[6] = BPoint(0.0, 0.0)
+		// image mode: 0=use_origin, 1=centered, 2=scaled, 3=tiled
+		be:bgndimginfomode[0] = int32(1 or 0x1)
+		be:bgndimginfomode[1] = int32(1 or 0x1)
+		be:bgndimginfomode[2] = int32(1 or 0x1)
+		be:bgndimginfomode[3] = int32(1 or 0x1)
+		be:bgndimginfomode[4] = int32(1 or 0x1)
+		be:bgndimginfomode[5] = int32(1 or 0x1)
+		be:bgndimginfomode[6] = int32(1 or 0x1)
+		be:bgndimginfoset[0] = int32(0 or (nil))
+		be:bgndimginfoset[1] = int32(0 or (nil))
+		be:bgndimginfoset[2] = int32(0 or (nil))
+		be:bgndimginfoset[3] = int32(0 or (nil))
+		be:bgndimginfoset[4] = int32(0 or (nil))
+		be:bgndimginfoset[5] = int32(0 or (nil))
+		be:bgndimginfoset[6] = int32(0 or (nil))
+		// one per workspace, up to the last changing one
+		be:desktop_color = rgb_color(0,0,0,255)
+	}
+	// Deskbar position
+	deskbar_settings = BMessage(0x00000000) {
+		// Deskbar on-screen position
+		db:location = int32(3 or 0x3)
+		// Deskbar is expanded
+		db:expanded = bool(true)
+	}
+	// Screensaver settings
+	screensaver_settings = BMessage(0x00000000) {
+		// Screensaver active module
+		screensaver:modulename = string("GalaxyScreenSaver", 17 bytes)
+	}
+	// Sounds Settings
+	sounds_settings = BMessage(0x00000000) {
+		AIM: Received Message = BMessage('SndI') {
+		}
+		BeShare-DLFinished = BMessage('SndI') {
+		}
+		BeShare-InactivChat = BMessage('SndI') {
+		}
+		BeShare-Name Said = BMessage('SndI') {
+		}
+		BeShare-NoComplete = BMessage('SndI') {
+		}
+		BeShare-Private Msg = BMessage('SndI') {
+		}
+		BeShare-PrivateWndw = BMessage('SndI') {
+		}
+		BeShare-ULFinished = BMessage('SndI') {
+		}
+		BeShare-ULStarted = BMessage('SndI') {
+		}
+		BeShare-WatchedUser = BMessage('SndI') {
+		}
+		Beep = BMessage('SndI') {
+			// Filename for this sound event
+			sounds:file = string("/BeOS 5 System/home/Stargate/Atlantis/downloads/Program Files/Plus!/Themes/Stargate Atlantis Base/SGA Sounds/SGADefault.wav", 123 bytes)
+			// Volume for this sound event
+			sounds:volume = float(0.820000)
+		}
+		IM Message Received = BMessage('SndI') {
+		}
+		InfoPopper: Important Message = BMessage('SndI') {
+		}
+		InfoPopper: Information Message = BMessage('SndI') {
+		}
+		Key Down = BMessage('SndI') {
+		}
+		Key Repeat = BMessage('SndI') {
+		}
+		Key Up = BMessage('SndI') {
+		}
+		Mouse Down = BMessage('SndI') {
+		}
+		Mouse Up = BMessage('SndI') {
+		}
+		New E-mail = BMessage('SndI') {
+			// Filename for this sound event
+			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Sounds/SGANewMail.wav", 102 bytes)
+			// Volume for this sound event
+			sounds:volume = float(0.200000)
+		}
+		Startup = BMessage('SndI') {
+			// Filename for this sound event
+			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Sounds/SGAStartup.wav", 102 bytes)
+			// Volume for this sound event
+			sounds:volume = float(0.200000)
+		}
+		Vision Nick Notification = BMessage('SndI') {
+		}
+		Window Activated = BMessage('SndI') {
+		}
+		Window Close = BMessage('SndI') {
+			// Filename for this sound event
+			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Sounds/SGAClose.wav", 100 bytes)
+			// Volume for this sound event
+			sounds:volume = float(0.010000)
+		}
+		Window Minimized = BMessage('SndI') {
+			// Filename for this sound event
+			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Sounds/SGAMinimize.wav", 103 bytes)
+			// Volume for this sound event
+			sounds:volume = float(0.010000)
+		}
+		Window Open = BMessage('SndI') {
+			// Filename for this sound event
+			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Sounds/SGAOpen.wav", 99 bytes)
+			// Volume for this sound event
+			sounds:volume = float(0.010000)
+		}
+		Window Restored = BMessage('SndI') {
+		}
+		Window Zoomed = BMessage('SndI') {
+			// Filename for this sound event
+			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Sounds/SGAMaximize.wav", 103 bytes)
+			// Volume for this sound event
+			sounds:volume = float(0.010000)
+		}
+	}
+	// Terminal Preferences
+	terminal_prefs = BMessage(0x00000000) {
+		// Terminal column count
+		term:cols = int32(80 or 0x50)
+		// Terminal row count
+		term:rows = int32(25 or 0x19)
+		// Terminal tab width
+		term:tab = int32(8 or 0x8)
+		// Terminal font
+		term:font = BFont(Anquietas/Regular/12.0, shear=90.0, rot=0.0, height=9.0+2.04+0.108)
+		// Terminal background color
+		term:c:bg = rgb_color(60,60,60,0)
+		// Terminal foreground color
+		term:c:fg = rgb_color(222,222,222,0)
+		// Terminal cursor background color
+		term:c:curbg = rgb_color(150,150,150,255)
+		// Terminal cursor foreground color
+		term:c:curfg = rgb_color(255,255,0,0)
+		// Terminal selection background color
+		term:c:selbg = rgb_color(144,161,179,255)
+		// Terminal selection foreground color
+		term:c:selfg = rgb_color(255,255,255,0)
+		// Terminal text encoding
+		term:encoding = int32(0 or (nil))
+	}
+	// UI Settings
+	ui_settings = BMessage(0x00000000) {
+		// Panel Background
+		be:c:PanBg = rgb_color(160,160,160,255)
+		// Panel Text
+		be:c:PanTx = rgb_color(0,0,0,255)
+		// Panel Link
+		be:c:PanLn = rgb_color(0,0,204,255)
+		// Document Background
+		be:c:DocBg = rgb_color(192,192,192,255)
+		// Document Text
+		be:c:DocTx = rgb_color(0,0,0,255)
+		// Document Link
+		be:c:DocLn = rgb_color(0,0,204,255)
+		// Control Background
+		be:c:CtlBg = rgb_color(100,100,100,255)
+		// Control Text
+		be:c:CtlTx = rgb_color(0,0,0,255)
+		// Control Border
+		be:c:CtlBr = rgb_color(127,127,127,255)
+		// Control Highlight
+		be:c:CtlHg = rgb_color(71,212,232,255)
+		// Navigation Base
+		be:c:NavBs = rgb_color(127,127,127,255)
+		// Navigation Pulse
+		be:c:NavPl = rgb_color(192,204,168,255)
+		// Shine
+		be:c:Shine = rgb_color(136,132,128,255)
+		// Shadow
+		be:c:Shadow = rgb_color(16,12,0,255)
+		// ToolTip Background
+		be:c:TipBg = rgb_color(185,245,253,255)
+		// ToolTip Text
+		be:c:TipTx = rgb_color(0,0,0,255)
+		// Menu Background
+		be:c:MenBg = rgb_color(127,127,127,255)
+		// Menu Selected Background
+		be:c:MenSBg = rgb_color(71,212,232,255)
+		// Menu Item Text
+		be:c:MenTx = rgb_color(0,0,0,255)
+		// Menu Selected Item Text
+		be:c:MenSTx = rgb_color(15,61,85,255)
+		// Menu Selected Border
+		be:c:MenSBr = rgb_color(200,200,200,255)
+		// Success
+		be:c:Success = rgb_color(0,255,0,255)
+		// Failure
+		be:c:Failure = rgb_color(255,0,0,255)
+		// Menu Item Text
+		be:f:MenTx = BFont(Ancient Virtual/Regular/16.0, shear=90.0, rot=0.0, height=12.5+-0.78125+0.078125)
+		// Menu Separator
+		be:MenSep = int32(0 or (nil))
+		// Show Menu Triggers
+		be:MenTrig = bool(false)
+		// Menu ZSnake
+		be:MenZSnake = bool(true)
+		// ToolTip
+		be:f:Tip = BFont(Anquietas/Regular/14.0, shear=90.0, rot=0.0, height=10.5+2.38+0.126)
+		// System Plain
+		be:f:be_plain_font = BFont(Anquietas/Regular/16.0, shear=90.0, rot=0.0, height=12.0+2.72+0.144)
+		// System Bold
+		be:f:be_bold_font = BFont(Anquietas/Regular/24.0, shear=90.0, rot=0.0, height=18.0+4.08+0.216)
+		// System Fixed
+		be:f:be_fixed_font = BFont(Anquietas/Regular/16.0, shear=90.0, rot=0.0, height=12.0+2.72+0.144)
+	}
+	// Window decorations and scrollbars
+	window_decorations = BMessage(0x00000000) {
+		// Window decor
+		window:decor = string("Smoke", 5 bytes)
+		// Window decor parameters
+		window:decor_globals = BMessage(0x00000000) {
+			BWindow = BMessage(0x00000000) {
+				f:Floater Title = BFont(Ancient Hand/Roman/11.0, shear=90.0, rot=0.0, height=10.2104+2.59424+0.0)
+				b:Buttons Need Focus = int32(0 or (nil))
+				f:Inactive Title = rgb_color(51,51,51,255)
+				f:Active Title = rgb_color(255,255,255,255)
+				f:WindowTitle = BFont(Ancient Hand/Roman/14.0, shear=90.0, rot=0.0, height=13.2104+2.59424+0.0)
+			}
+		}
+	}
+}
