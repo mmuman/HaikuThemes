@@ -15,13 +15,13 @@ BMessage('ZThm') {
 		be:bgndimginfoerasetext[5] = bool(false)
 		be:bgndimginfoerasetext[6] = bool(false)
 		// Actual backdrop image file
-		be:bgndimginfopath[0] = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Wallpaper/SGAWallpaper.jpg", 107 bytes)
-		be:bgndimginfopath[1] = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Wallpaper/sAtlantis4.jpg", nn bytes)
-		be:bgndimginfopath[2] = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Wallpaper/sAtlantis5.jpg", nn bytes)
-		be:bgndimginfopath[3] = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Wallpaper/sAtlantis6.jpg", nn bytes)
-		be:bgndimginfopath[4] = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Wallpaper/sAtlantis7.jpg", nn bytes)
-		be:bgndimginfopath[5] = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Wallpaper/sAtlantis8.jpg", nn bytes)
-		be:bgndimginfopath[6] = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Wallpaper/mirko_gaterium.jpg", nn bytes)
+		be:bgndimginfopath[0] = string("/boot/home/config/settings/UIThemes/Stargate_Atlantis/Stargate Atlantis Base/SGA Wallpaper/SGAWallpaper.jpg", 107 bytes)
+		be:bgndimginfopath[1] = string("/boot/home/config/settings/UIThemes/Stargate_Atlantis/Stargate Atlantis Base/SGA Wallpaper/sAtlantis4.jpg", nn bytes)
+		be:bgndimginfopath[2] = string("/boot/home/config/settings/UIThemes/Stargate_Atlantis/Stargate Atlantis Base/SGA Wallpaper/sAtlantis5.jpg", nn bytes)
+		be:bgndimginfopath[3] = string("/boot/home/config/settings/UIThemes/Stargate_Atlantis/Stargate Atlantis Base/SGA Wallpaper/sAtlantis6.jpg", nn bytes)
+		be:bgndimginfopath[4] = string("/boot/home/config/settings/UIThemes/Stargate_Atlantis/Stargate Atlantis Base/SGA Wallpaper/sAtlantis7.jpg", nn bytes)
+		be:bgndimginfopath[5] = string("/boot/home/config/settings/UIThemes/Stargate_Atlantis/Stargate Atlantis Base/SGA Wallpaper/sAtlantis8.jpg", nn bytes)
+		be:bgndimginfopath[6] = string("/boot/home/config/settings/UIThemes/Stargate_Atlantis/Stargate Atlantis Base/SGA Wallpaper/mirko_gaterium.jpg", nn bytes)
 		// Workspaces each backdrop apply to
 		be:bgndimginfoworkspaces[0] = int32(1)
 		be:bgndimginfoworkspaces[1] = int32(2)
@@ -114,13 +114,13 @@ BMessage('ZThm') {
 		}
 		New E-mail = BMessage('SndI') {
 			// Filename for this sound event
-			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Sounds/SGANewMail.wav", 102 bytes)
+			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate_Atlantis/Stargate Atlantis Base/SGA Sounds/SGANewMail.wav", 102 bytes)
 			// Volume for this sound event
 			sounds:volume = float(0.200000)
 		}
 		Startup = BMessage('SndI') {
 			// Filename for this sound event
-			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Sounds/SGAStartup.wav", 102 bytes)
+			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate_Atlantis/Stargate Atlantis Base/SGA Sounds/SGAStartup.wav", 102 bytes)
 			// Volume for this sound event
 			sounds:volume = float(0.200000)
 		}
@@ -130,19 +130,19 @@ BMessage('ZThm') {
 		}
 		Window Close = BMessage('SndI') {
 			// Filename for this sound event
-			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Sounds/SGAClose.wav", 100 bytes)
+			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate_Atlantis/Stargate Atlantis Base/SGA Sounds/SGAClose.wav", 100 bytes)
 			// Volume for this sound event
 			sounds:volume = float(0.010000)
 		}
 		Window Minimized = BMessage('SndI') {
 			// Filename for this sound event
-			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Sounds/SGAMinimize.wav", 103 bytes)
+			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate_Atlantis/Stargate Atlantis Base/SGA Sounds/SGAMinimize.wav", 103 bytes)
 			// Volume for this sound event
 			sounds:volume = float(0.010000)
 		}
 		Window Open = BMessage('SndI') {
 			// Filename for this sound event
-			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Sounds/SGAOpen.wav", 99 bytes)
+			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate_Atlantis/Stargate Atlantis Base/SGA Sounds/SGAOpen.wav", 99 bytes)
 			// Volume for this sound event
 			sounds:volume = float(0.010000)
 		}
@@ -150,7 +150,7 @@ BMessage('ZThm') {
 		}
 		Window Zoomed = BMessage('SndI') {
 			// Filename for this sound event
-			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate Atlantis/Stargate Atlantis Base/SGA Sounds/SGAMaximize.wav", 103 bytes)
+			sounds:file = string("/boot/home/config/settings/UIThemes/Stargate_Atlantis/Stargate Atlantis Base/SGA Sounds/SGAMaximize.wav", 103 bytes)
 			// Volume for this sound event
 			sounds:volume = float(0.010000)
 		}
